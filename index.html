@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DINS MILTON J | PLC & Industrial Automation</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#07111f;
+      color:#eaf2ff;
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1180px,92%);margin:auto}
+    header{
+      position:sticky;top:0;z-index:10;
+      backdrop-filter:blur(10px);
+      background:rgba(7,17,31,.88);
+      border-bottom:1px solid rgba(108,180,255,.15);
+    }
+    nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+    .logo{font-size:1.35rem;font-weight:800;letter-spacing:.8px;color:#7dd3fc}
+    .nav-links{display:flex;gap:24px;color:#c9d9f2}
+    .hero{
+      padding:92px 0 72px;
+      background:
+        radial-gradient(circle at top right, rgba(0,180,255,.18), transparent 28%),
+        radial-gradient(circle at left, rgba(0,255,170,.10), transparent 25%),
+        linear-gradient(180deg,#07111f 0%, #081728 100%);
+    }
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:center}
+    .badge{
+      display:inline-block;padding:8px 14px;border-radius:999px;
+      background:rgba(125,211,252,.12);color:#7dd3fc;border:1px solid rgba(125,211,252,.25);
+      font-size:.9rem;margin-bottom:18px
+    }
+    h1{font-size:3.1rem;line-height:1.08;margin-bottom:18px}
+    .highlight{color:#7dd3fc}
+    .hero p{font-size:1.05rem;color:#bfd0ea;max-width:700px;margin-bottom:28px}
+    .btns{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{
+      padding:13px 22px;border-radius:12px;font-weight:700;display:inline-block;
+      border:1px solid rgba(255,255,255,.12);transition:.2s ease
+    }
+    .btn-primary{background:linear-gradient(135deg,#00c2ff,#2f7bff);color:white}
+    .btn-secondary{background:rgba(255,255,255,.04);color:#eaf2ff}
+    .btn:hover{transform:translateY(-2px)}
+    .hero-card,.card{
+      background:linear-gradient(180deg,rgba(15,31,54,.92),rgba(8,20,37,.92));
+      border:1px solid rgba(108,180,255,.18);
+      border-radius:22px;padding:24px;
+      box-shadow:0 18px 40px rgba(0,0,0,.22)
+    }
+    .hero-card h3,.skill-box h4{color:#7dd3fc}
+    .stat{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+    .stat:last-child{border-bottom:none}
+    section{padding:72px 0}
+    .section-title{font-size:2rem;margin-bottom:14px}
+    .section-sub{color:#aebfdb;max-width:780px;margin-bottom:30px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .skill-box{
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:18px;padding:20px
+    }
+    ul{padding-left:18px}
+    li{margin-bottom:8px;color:#d6e3f7}
+    .project-grid,.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .project-card h3{margin-bottom:10px}
+    .tag{
+      display:inline-block;padding:6px 10px;border-radius:999px;
+      background:rgba(125,211,252,.12);font-size:.8rem;margin:6px 6px 0 0;color:#9be3ff
+    }
+    .contact-box{
+      background:rgba(255,255,255,.03);
+      padding:16px;border-radius:16px;border:1px solid rgba(255,255,255,.08);margin-bottom:12px
+    }
+    footer{
+      padding:28px 0;color:#aebfdb;border-top:1px solid rgba(255,255,255,.08);text-align:center
+    }
+    @media (max-width: 900px){
+      .hero-grid,.grid-2,.project-grid,.contact-grid,.skills{grid-template-columns:1fr}
+      h1{font-size:2.25rem}
+      .nav-links{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">DINS MILTON J | PLC &amp; Industrial Automation</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">PLC • Robotics • Industrial Automation</div>
+        <h1>DINS <span class="highlight">MILTON J</span><br>Automation Engineer</h1>
+        <p>
+          Automation Engineer with hands-on knowledge in industrial automation, PLC programming,
+          robotics integration, HMI/SCADA, VFD communication, and machine control systems.
+          Skilled in Siemens, Mitsubishi, Allen-Bradley, and Delta PLC platforms with strong interest
+          in building reliable automation solutions for modern industrial environments.
+        </p>
+        <div class="btns">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="mailto:dinsmilton75@gmail.com">Mail Me</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Core Skills</h3>
+        <div class="stat"><span>PLC Platforms</span>
+        <strong>
+         Siemens / Mitsubishi / AB / Delta<br> 
+         Schneider / Omron / Beckhoff
+         </strong>
+       </div>
+        <div class="stat"><span>Robotics</span><strong>ABB Integration</strong></div>
+        <div class="stat"><span>Industrial Networks</span><strong>PROFINET / Modbus</strong></div>
+        <div class="stat"><span>HMI / SCADA</span><strong>WinCC / InTouch / GOT</strong></div>
+        <div class="stat"><span>Applications</span>
+        <strong>
+         Load-Unload / Laser Marking<br> Conveyor Logic
+        </strong>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-sub">
+        I am DINS MILTON J, an Automation Engineer with practical exposure to industrial automation,
+        PLC programming, HMI development, robot integration, scanner communication, and machine sequence control.
+        My focus is on building stable automation logic, understanding industrial workflows, and continuously improving
+        my skills in machine automation, robotics, and industrial communication systems.
+      </p>
+      <div class="grid-2">
+        <div class="card">
+          <h3>What I Work With</h3>
+          <ul>
+            <li>PLC programming and sequence control development</li>
+            <li>ABB robot integration with machine automation</li>
+            <li>HMI screen development for operators and maintenance teams</li>
+            <li>VFD, scanner, and device communication setup</li>
+            <li>Interlocks, alarms, manual mode, and production logic</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Professional Focus</h3>
+          <ul>
+            <li>Build clean and reliable automation logic</li>
+            <li>Improve machine performance through structured control systems</li>
+            <li>Develop practical knowledge in robotics and industrial communication</li>
+            <li>Create operator-friendly HMI screens and machine diagnostics</li>
+            <li>Support automation systems with real-world industrial understanding</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Tools</h2>
+      <p class="section-sub">Technologies and platforms used in industrial automation and machine control.</p>
+      <div class="skills">
+        <div class="skill-box">
+          <h4>PLC Programming</h4>
+          <ul>
+            <li>Siemens PLC</li>
+            <li>Mitsubishi PLC</li>
+            <li>Allen-Bradley PLC</li>
+            <li>Delta PLC</li>
+            <li>Schneider Electric PLC</li>
+            <li>Omron PLC</li>
+            <li>Beckhoff PLC</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h4>Robotics & Motion</h4>
+          <ul>
+            <li>ABB Robot Integration</li>
+            <li>Servo Coordination</li>
+            <li>Conveyor Tracking Logic</li>
+            <li>Machine Sequence Flow</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h4>HMI / SCADA</h4>
+          <ul>
+            <li>WinCC</li>
+            <li>Wonderware InTouch</li>
+            <li>GT Designer3</li>
+            <li>Operator Screen Design</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h4>Industrial Communication</h4>
+          <ul>
+            <li>PROFINET</li>
+            <li>Modbus TCP</li>
+            <li>Modbus RTU</li>
+            <li>PLC-HMI-VFD-Robot Communication</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Industrial automation projects and practical work in machine control, robotics, and system integration.</p>
+      <div class="project-grid">
+        <div class="card project-card">
+          <h3>Automated Load & Unload System</h3>
+          <p>Worked on PLC-based sequence logic for automatic loading and unloading using Siemens S7-1200 with interlocks, sensors, and machine coordination.</p>
+          <span class="tag">Siemens PLC</span><span class="tag">Machine Sequence</span><span class="tag">Automation</span>
+        </div>
+        <div class="card project-card">
+          <h3>Laser Marking System with ABB Robot</h3>
+          <p>Integrated ABB robot handling with Siemens PLC and scanner-based automation flow for product movement and laser marking sequence control.</p>
+          <span class="tag">ABB Robot</span><span class="tag">PLC Integration</span><span class="tag">Laser Marking</span>
+        </div>
+        <div class="card project-card">
+          <h3>Conveyor Tracking & Queue Logic</h3>
+          <p>Worked on tracking logic, FIFO buffer handling, and multi-station queue flow for better product movement control in industrial systems.</p>
+          <span class="tag">Tracking Logic</span><span class="tag">FIFO</span><span class="tag">Buffer Control</span>
+        </div>
+        <div class="card project-card">
+          <h3>HMI Development</h3>
+          <p>Created HMI concepts for machine status, alarms, manual mode operation, and process monitoring to improve operator visibility and control.</p>
+          <span class="tag">HMI</span><span class="tag">Alarm Screens</span><span class="tag">Manual Mode</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub">For automation projects, PLC programming support, and industrial automation opportunities.</p>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Let’s Connect</h3>
+          <p>If you’d like to connect regarding PLC programming, industrial automation, robotics, or machine automation projects, feel free to reach out.</p>
+        </div>
+        <div class="card">
+          <div class="contact-box"><strong>Name:</strong> DINS MILTON J</div>
+          <div class="contact-box"><strong>Role:</strong> Automation Engineer & PLC Programmer</div>
+          <div class="contact-box"><strong>Email:</strong>
+          <a href="mailto:dinsmilton75@gmail.com">XXXXXXXXXX@gmail.com</a>
+          </div>
+          <div class="contact-box">
+<strong>Phone Number:</strong>
+<a href="tel:+919344043192">XXXXXXXXXX</a>
+</div>
+          <div class="contact-box"><strong>PLC Platforms:</strong> Siemens, Mitsubishi, Allen-Bradley, Delta, Schneider Electric,Omron,Beckhoff</div>
+          <div class="contact-box"><strong>Location:</strong> Tamil Nadu, India</div>
+          <div class="contact-box">
+  <strong>LinkedIn:</strong>
+  <a href="https://www.linkedin.com/in/dinsmilton"
+ target="_blank">
+    View My LinkedIn Profile
+  </a>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 DINS MILTON J • Automation Engineer Portfolio
+  </footer>
+</body>
+</html>
